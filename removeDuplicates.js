@@ -25,3 +25,13 @@ const removeDuplicates1 = (arr) => {
 };
 
 console.log(removeDuplicates1(input), "remove duplicates in optimized way");
+
+const removeDuplicates2 = (arr) => {
+  let data = new Set(arr);
+  return Array.from(data);
+};
+
+console.log(
+  removeDuplicates2(input),
+  "remove duplicates in better optimized way with less number of code"
+);
