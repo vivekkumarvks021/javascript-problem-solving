@@ -35,3 +35,14 @@ console.log(
   removeDuplicates2(input),
   "remove duplicates in better optimized way with less number of code"
 );
+
+const removeDuplicatesUsingFilter = (arr) => {
+  return arr.filter((item, index) => {
+    return arr.indexOf(item) === index;
+  });
+};
+
+console.log(
+  removeDuplicatesUsingFilter(input),
+  "remove duplicates using filter array"
+);
